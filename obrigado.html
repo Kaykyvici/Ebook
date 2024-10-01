@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finalize sua compra do ebook 'Culinária & Autoajuda: Receitas para uma Vida Melhor'. Preencha os dados de pagamento e confirme sua compra.">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Finalize sua Compra</h1>
+        <img src="download.png" alt="Imagem de Pagamento">
+    </header>
+    
+    <section>
+        <h2>Informações de Pagamento</h2>
+        <form action="compra.html" method="get">
+            <p><strong>Nome:</strong> <input type="text" name="nome" required></p>
+            <p><strong>Email:</strong> <input type="email" name="email" required></p>
+            
+            <fieldset>
+                <legend>Forma de Pagamento:</legend>
+                <label>
+                    <input type="radio" name="pagamento" value="cartao" required>
+                    Cartão de Crédito
+                </label><br>
+                <label>
+                    <input type="radio" name="pagamento" value="pix" required>
+                    Pix
+                </label>
+            </fieldset>
+            
+            <p><strong>Detalhes do Pagamento:</strong></p>
+            <p><label>Se você escolheu cartão de crédito, insira os detalhes abaixo:</label></p>
+            <p><strong>Número do Cartão:</strong> <input type="text" name="numero_cartao" required></p>
+            <p><strong>Data de Validade:</strong> <input type="text" name="validade_cartao" required></p>
+            <p><strong>Código de Segurança:</strong> <input type="text" name="cvv_cartao" maxlength="3" required></p>
+            
+            <p><strong>Para pagamentos via Pix, siga as instruções enviadas para o seu email.</strong></p>
+            
+            <p><input type="checkbox" name="termos" required> Aceito os <a href="termos.html">termos de segurança</a></p>
+            
+            <button type="submit">Confirmar Pagamento</button>
+        </form>
+    </section>
+    
+    <footer style=" bottom: 0; width: 100%; background-color: #f1f1f1; text-align: center; padding: 10px; border-top: 1px solid #ddd;">
+        <p>© 2024 receitas do kayky que curam. Todos os direitos reservados.</p>
+        <p><a href="https://www.fonte-libras.com">Leia em Libras</a></p>
+        <p><a href="index.html">Voltar à Página Inicial</a></p>
+    </footer>
+    >
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
